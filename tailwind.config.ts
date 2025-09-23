@@ -20,13 +20,13 @@ export default {
         background: "hsl(var(--background))",
         foreground: "hsl(var(--foreground))",
 
-        /* Lime-Focused Color Palette */
-        "neon-lime": "hsl(var(--neon-lime))",
-        "lime-bright": "hsl(var(--lime-bright))",
-        "lime-dark": "hsl(var(--lime-dark))",
-        "lime-deep": "hsl(var(--lime-deep))",
-        "lime-light": "hsl(var(--lime-light))",
-        "lime-pale": "hsl(var(--lime-pale))",
+        /* Fidelify-Focused Color Palette */
+        "fidelify-primary": "hsl(var(--fidelify-primary))",
+        "fidelify-light": "hsl(var(--fidelify-light))",
+        "fidelify-dark": "hsl(var(--fidelify-dark))",
+        "fidelify-deep": "hsl(var(--fidelify-deep))",
+        "fidelify-pale": "hsl(var(--fidelify-pale))",
+        "fidelify-accent": "hsl(var(--fidelify-accent))",
         "light-gray": "hsl(var(--light-gray))",
         "dark-gray": "hsl(var(--dark-gray))",
 
@@ -77,6 +77,7 @@ export default {
       fontFamily: {
         inter: ["Inter", "sans-serif"],
         poppins: ["Poppins", "sans-serif"],
+        "poppins-black": ["Poppins", "sans-serif"],
       },
       backgroundImage: {
         "gradient-hero": "var(--gradient-hero)",

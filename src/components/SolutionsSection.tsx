@@ -60,7 +60,7 @@ const SolutionsSection = () => {
                   <h3 className="text-xl font-semibold text-dark-gray mb-1">
                     {solution.title}
                   </h3>
-                  <p className="text-lime-dark font-medium mb-2">
+                  <p className="text-fidelify-dark font-medium mb-2">
                     → {solution.subtitle}
                   </p>
                   <p className="text-muted-foreground leading-relaxed">
@@ -79,7 +79,7 @@ const SolutionsSection = () => {
                 alt="Notificação push personalizada"
                 className="rounded-2xl shadow-large w-full"
               />
-              <div className="absolute -top-4 -right-4 w-24 h-24 bg-neon-lime/20 rounded-full blur-xl"></div>
+              <div className="absolute -top-4 -right-4 w-24 h-24 bg-fidelify-primary/20 rounded-full blur-xl"></div>
             </div>
             <div className="relative">
               <img 
@@ -87,7 +87,7 @@ const SolutionsSection = () => {
                 alt="Dashboard com relatórios"
                 className="rounded-2xl shadow-large w-full"
               />
-              <div className="absolute -bottom-4 -left-4 w-32 h-32 bg-lime-bright/20 rounded-full blur-xl"></div>
+              <div className="absolute -bottom-4 -left-4 w-32 h-32 bg-fidelify-light/20 rounded-full blur-xl"></div>
             </div>
           </div>
         </div>

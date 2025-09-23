@@ -44,7 +44,7 @@ const HowItWorksSection = () => {
             >
               {/* Connector line */}
               {index < steps.length - 1 && (
-                <div className="absolute left-8 top-20 w-0.5 h-24 bg-gradient-to-b from-lime-dark to-neon-lime hidden md:block"></div>
+                <div className="absolute left-8 top-20 w-0.5 h-24 bg-gradient-to-b from-fidelify-dark to-fidelify-primary hidden md:block"></div>
               )}
               
               <div className="flex flex-col md:flex-row items-start gap-8 mb-16">
@@ -53,7 +53,7 @@ const HowItWorksSection = () => {
                   <div className="w-16 h-16 bg-gradient-hero rounded-2xl flex items-center justify-center shadow-medium">
                     <step.icon className="w-8 h-8 text-white" />
                   </div>
-                  <div className="absolute -top-2 -right-2 w-8 h-8 bg-neon-lime rounded-full flex items-center justify-center">
+                  <div className="absolute -top-2 -right-2 w-8 h-8 bg-fidelify-primary rounded-full flex items-center justify-center">
                     <span className="text-xs font-bold text-dark-gray">{step.number}</span>
                   </div>
                 </div>

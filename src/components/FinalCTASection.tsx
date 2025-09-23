@@ -11,15 +11,15 @@ const FinalCTASection = () => {
   ];
 
   const handleWhatsAppClick = () => {
-    window.open("https://wa.me/5511999999999?text=Olá,%20gostaria%20de%20saber%20mais%20sobre%20o%20app%20de%20fidelidade%20e%20agendar%20uma%20demonstração", "_blank");
+    window.open("https://wa.me/5511999999999?text=Olá,%20gostaria%20de%20saber%20mais%20sobre%20o%20Fidelify%20e%20agendar%20uma%20demonstração", "_blank");
   };
 
   return (
     <section className="py-20 bg-gradient-hero relative overflow-hidden">
       {/* Background decorative elements */}
-      <div className="absolute inset-0 bg-gradient-to-br from-lime-dark/20 to-neon-lime/20"></div>
-      <div className="absolute top-10 right-10 w-80 h-80 bg-neon-lime/10 rounded-full blur-3xl"></div>
-      <div className="absolute bottom-10 left-10 w-60 h-60 bg-lime-bright/10 rounded-full blur-2xl"></div>
+      <div className="absolute inset-0 bg-gradient-to-br from-fidelify-dark/20 to-fidelify-primary/20"></div>
+      <div className="absolute top-10 right-10 w-80 h-80 bg-fidelify-primary/10 rounded-full blur-3xl"></div>
+      <div className="absolute bottom-10 left-10 w-60 h-60 bg-fidelify-light/10 rounded-full blur-2xl"></div>
 
       <div className="relative z-10 container mx-auto px-6">
         <div className="max-w-4xl mx-auto text-center">
@@ -42,7 +42,7 @@ const FinalCTASection = () => {
                 className="flex items-center gap-3 text-left"
                 style={{ animationDelay: `${index * 0.1}s` }}
               >
-                <CheckCircle className="w-6 h-6 text-neon-lime flex-shrink-0" />
+                <CheckCircle className="w-6 h-6 text-fidelify-primary flex-shrink-0" />
                 <span className="text-white/90 text-lg">{benefit}</span>
               </div>
             ))}
@@ -74,17 +74,17 @@ const FinalCTASection = () => {
                   Primeiros 50 clientes ganham 3 meses de suporte premium grátis
                 </p>
               </div>
-              <div className="flex items-center gap-4">
-                <div className="text-center">
-                  <div className="text-3xl font-bold text-neon-lime">37</div>
-                  <div className="text-white/70 text-sm">Vagas restantes</div>
+                <div className="flex items-center gap-4">
+                  <div className="text-center">
+                    <div className="text-3xl font-bold text-fidelify-primary">37</div>
+                    <div className="text-white/70 text-sm">Vagas restantes</div>
+                  </div>
+                  <div className="w-px h-12 bg-white/30"></div>
+                  <div className="text-center">
+                    <div className="text-3xl font-bold text-fidelify-primary">⏰</div>
+                    <div className="text-white/70 text-sm">Limitado</div>
+                  </div>
                 </div>
-                <div className="w-px h-12 bg-white/30"></div>
-                <div className="text-center">
-                  <div className="text-3xl font-bold text-neon-lime">⏰</div>
-                  <div className="text-white/70 text-sm">Limitado</div>
-                </div>
-              </div>
             </div>
           </div>
         </div>
