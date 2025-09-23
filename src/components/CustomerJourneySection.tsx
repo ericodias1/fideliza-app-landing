@@ -56,31 +56,19 @@ const CustomerJourneySection = () => {
             {steps.map((step, index) => (
               <div 
                 key={index}
-                className={`p-6 rounded-2xl cursor-pointer transition-all duration-300 fade-in-up ${
-                  activeStep === index 
-                    ? 'bg-gradient-to-r from-fidelify-dark to-fidelify-primary text-white shadow-large' 
-                    : 'bg-light-gray hover:bg-gradient-to-r hover:from-fidelify-light hover:to-fidelify-primary hover:text-white'
-                }`}
+                className="p-6 rounded-2xl cursor-pointer transition-all duration-300 fade-in-up bg-light-gray hover-scale"
                 onClick={() => setActiveStep(index)}
                 style={{ animationDelay: `${index * 0.1}s` }}
               >
                 <div className="flex items-start gap-4">
-                    <div className={`flex-shrink-0 w-12 h-12 rounded-xl flex items-center justify-center ${
-                      activeStep === index ? 'bg-white/20' : 'bg-fidelify-dark/10'
-                    }`}>
-                      <step.icon className={`w-6 h-6 ${
-                        activeStep === index ? 'text-white' : 'text-fidelify-dark'
-                      }`} />
+                    <div className="flex-shrink-0 w-12 h-12 rounded-xl flex items-center justify-center bg-fidelify-dark/10">
+                      <step.icon className="w-6 h-6 text-fidelify-dark" />
                   </div>
                   <div>
-                    <h3 className={`text-xl font-semibold mb-2 ${
-                      activeStep === index ? 'text-white' : 'text-dark-gray'
-                    }`}>
+                    <h3 className="text-xl font-semibold mb-2 text-dark-gray">
                       {step.title}
                     </h3>
-                    <p className={`leading-relaxed ${
-                      activeStep === index ? 'text-white/90' : 'text-muted-foreground'
-                    }`}>
+                    <p className="leading-relaxed text-muted-foreground">
                       {step.description}
                     </p>
                   </div>
