@@ -1,5 +1,5 @@
 import { Bell, Target, Gift, PieChart } from "lucide-react";
-import pushNotificationMockup from "@/assets/push-notification-mockup.jpg";
+import notificationMockup from "@/assets/notification-mockup.png";
 import dashboardPreview from "@/assets/dashboard-preview.jpg";
 
 const SolutionsSection = () => {
@@ -75,8 +75,8 @@ const SolutionsSection = () => {
           <div className="space-y-8 fade-in-up">
             <div className="relative">
               <img 
-                src={pushNotificationMockup}
-                alt="Notificação push personalizada"
+                src={notificationMockup}
+                alt="Notificação push de promoção Coca Cola no app de fidelidade"
                 className="rounded-2xl shadow-large w-full"
               />
               <div className="absolute -top-4 -right-4 w-24 h-24 bg-fidelify-primary/20 rounded-full blur-xl"></div>
