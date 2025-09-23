@@ -9,9 +9,9 @@ const HeroSection = () => {
   return (
     <section className="relative min-h-screen bg-gradient-hero overflow-hidden">
       {/* Background decorative elements */}
-      <div className="absolute inset-0 bg-gradient-to-br from-bright-blue/20 to-soft-purple/20"></div>
+      <div className="absolute inset-0 bg-gradient-to-br from-lime-dark/20 to-neon-lime/20"></div>
       <div className="absolute top-20 right-20 w-96 h-96 bg-neon-lime/10 rounded-full blur-3xl"></div>
-      <div className="absolute bottom-20 left-20 w-64 h-64 bg-bright-blue/10 rounded-full blur-2xl"></div>
+      <div className="absolute bottom-20 left-20 w-64 h-64 bg-lime-bright/10 rounded-full blur-2xl"></div>
 
       <div className="relative z-10 container mx-auto px-6 py-20">
         <div className="grid lg:grid-cols-2 gap-12 items-center min-h-[80vh]">

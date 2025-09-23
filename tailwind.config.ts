@@ -20,10 +20,13 @@ export default {
         background: "hsl(var(--background))",
         foreground: "hsl(var(--foreground))",
 
-        /* Modern 2025 Brand Colors */
+        /* Lime-Focused Color Palette */
         "neon-lime": "hsl(var(--neon-lime))",
-        "bright-blue": "hsl(var(--bright-blue))",
-        "soft-purple": "hsl(var(--soft-purple))",
+        "lime-bright": "hsl(var(--lime-bright))",
+        "lime-dark": "hsl(var(--lime-dark))",
+        "lime-deep": "hsl(var(--lime-deep))",
+        "lime-light": "hsl(var(--lime-light))",
+        "lime-pale": "hsl(var(--lime-pale))",
         "light-gray": "hsl(var(--light-gray))",
         "dark-gray": "hsl(var(--dark-gray))",
 

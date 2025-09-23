@@ -44,7 +44,7 @@ const HowItWorksSection = () => {
             >
               {/* Connector line */}
               {index < steps.length - 1 && (
-                <div className="absolute left-8 top-20 w-0.5 h-24 bg-gradient-to-b from-bright-blue to-soft-purple hidden md:block"></div>
+                <div className="absolute left-8 top-20 w-0.5 h-24 bg-gradient-to-b from-lime-dark to-neon-lime hidden md:block"></div>
               )}
               
               <div className="flex flex-col md:flex-row items-start gap-8 mb-16">

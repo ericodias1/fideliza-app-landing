@@ -60,7 +60,7 @@ const SolutionsSection = () => {
                   <h3 className="text-xl font-semibold text-dark-gray mb-1">
                     {solution.title}
                   </h3>
-                  <p className="text-bright-blue font-medium mb-2">
+                  <p className="text-lime-dark font-medium mb-2">
                     → {solution.subtitle}
                   </p>
                   <p className="text-muted-foreground leading-relaxed">
@@ -87,7 +87,7 @@ const SolutionsSection = () => {
                 alt="Dashboard com relatórios"
                 className="rounded-2xl shadow-large w-full"
               />
-              <div className="absolute -bottom-4 -left-4 w-32 h-32 bg-bright-blue/20 rounded-full blur-xl"></div>
+              <div className="absolute -bottom-4 -left-4 w-32 h-32 bg-lime-bright/20 rounded-full blur-xl"></div>
             </div>
           </div>
         </div>

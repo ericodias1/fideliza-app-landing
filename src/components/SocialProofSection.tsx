@@ -73,7 +73,7 @@ const SocialProofSection = () => {
                 className="card-modern fade-in-up relative"
                 style={{ animationDelay: `${index * 0.1}s` }}
               >
-                <Quote className="absolute top-6 right-6 w-8 h-8 text-bright-blue/20" />
+                <Quote className="absolute top-6 right-6 w-8 h-8 text-lime-dark/20" />
                 
                 <div className="flex mb-4">
                   {[...Array(testimonial.rating)].map((_, i) => (

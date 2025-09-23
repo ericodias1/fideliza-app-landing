@@ -12,28 +12,28 @@ const CustomerJourneySection = () => {
       title: "Baixa o app da sua marca",
       description: "Cliente encontra seu app personalizado na App Store ou Google Play e faz o download.",
       image: heroPhoneMockup,
-      color: "from-bright-blue to-soft-purple"
+      color: "from-lime-dark to-neon-lime"
     },
     {
       icon: ShoppingCart,
       title: "Faz compras normalmente",
       description: "Cliente continua comprando como sempre, sem mudanças no processo de compra.",
       image: heroPhoneMockup,
-      color: "from-neon-lime to-bright-blue"
+      color: "from-neon-lime to-lime-bright"
     },
     {
       icon: QrCode,
       title: "Escaneia o QR Code da nota",
       description: "Após a compra, cliente escaneia o QR Code da nota fiscal para registrar a compra.",
       image: qrScannerMockup,
-      color: "from-soft-purple to-bright-blue"
+      color: "from-lime-deep to-lime-dark"
     },
     {
       icon: Coins,
       title: "Recebe cashback para usar na próxima compra",
       description: "Cliente acumula cashback automaticamente e pode usar em compras futuras.",
       image: heroPhoneMockup,
-      color: "from-bright-blue to-neon-lime"
+      color: "from-lime-bright to-neon-lime"
     }
   ];
 
@@ -65,12 +65,12 @@ const CustomerJourneySection = () => {
                 style={{ animationDelay: `${index * 0.1}s` }}
               >
                 <div className="flex items-start gap-4">
-                  <div className={`flex-shrink-0 w-12 h-12 rounded-xl flex items-center justify-center ${
-                    activeStep === index ? 'bg-white/20' : 'bg-bright-blue/10'
-                  }`}>
-                    <step.icon className={`w-6 h-6 ${
-                      activeStep === index ? 'text-white' : 'text-bright-blue'
-                    }`} />
+                    <div className={`flex-shrink-0 w-12 h-12 rounded-xl flex items-center justify-center ${
+                      activeStep === index ? 'bg-white/20' : 'bg-lime-dark/10'
+                    }`}>
+                      <step.icon className={`w-6 h-6 ${
+                        activeStep === index ? 'text-white' : 'text-lime-dark'
+                      }`} />
                   </div>
                   <div>
                     <h3 className={`text-xl font-semibold mb-2 ${
