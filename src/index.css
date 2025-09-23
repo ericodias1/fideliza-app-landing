@@ -131,11 +131,11 @@ All colors MUST be HSL.
   }
 
   .phone-frame {
-    @apply relative bg-dark-gray rounded-[3rem] p-3 shadow-large;
+    @apply relative w-full;
   }
 
   .phone-screen {
-    @apply bg-white rounded-[2.5rem] overflow-hidden aspect-[9/19];
+    @apply w-full h-auto rounded-lg overflow-hidden;
   }
 
   /* Gradient Text */
