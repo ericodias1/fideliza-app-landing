@@ -56,12 +56,12 @@ const HeroSection = () => {
 
           {/* Right content - Phone mockup */}
           <div className="flex justify-center lg:justify-end fade-in-up">
-            <div className="phone-mockup transform hover:scale-105 transition-transform duration-500">
-              <div className="phone-frame">
+            <div className="phone-mockup-hero transform hover:scale-105 transition-transform duration-500">
+              <div className="phone-frame-hero">
                 <img 
                   src={heroPhoneMockup} 
                   alt="Fidelify - App de fidelidade - Tela principal" 
-                  className="phone-screen object-cover"
+                  className="phone-screen-hero object-cover"
                 />
               </div>
             </div>

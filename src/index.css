@@ -138,6 +138,19 @@ All colors MUST be HSL.
     @apply w-full h-auto rounded-lg overflow-hidden;
   }
 
+  /* Hero Section Phone with Border */
+  .phone-mockup-hero {
+    @apply relative w-full max-w-sm mx-auto;
+  }
+
+  .phone-frame-hero {
+    @apply relative bg-dark-gray rounded-[3rem] p-3 shadow-large;
+  }
+
+  .phone-screen-hero {
+    @apply bg-white rounded-[2.5rem] overflow-hidden aspect-[9/19];
+  }
+
   /* Gradient Text */
   .gradient-text {
     @apply bg-gradient-to-r from-fidelify-dark to-fidelify-primary bg-clip-text text-transparent;
