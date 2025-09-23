@@ -61,8 +61,8 @@ const CustomerJourneySection = () => {
                 style={{ animationDelay: `${index * 0.1}s` }}
               >
                 <div className="flex items-start gap-4">
-                    <div className="flex-shrink-0 w-12 h-12 rounded-xl flex items-center justify-center bg-fidelify-dark/10 group-hover:bg-fidelify-primary/15 transition-all duration-300">
-                      <step.icon className="w-6 h-6 text-fidelify-dark group-hover:text-fidelify-primary transition-all duration-300" />
+                    <div className="flex-shrink-0 w-12 h-12 rounded-xl flex items-center justify-center bg-fidelify-dark/10 group-hover:bg-fidelify-primary/20 transition-all duration-300">
+                      <step.icon className="w-6 h-6 text-fidelify-dark group-hover:text-fidelify-deep transition-all duration-300" />
                   </div>
                   <div>
                     <h3 className="text-xl font-semibold mb-2 text-dark-gray group-hover:text-fidelify-dark transition-all duration-300">
