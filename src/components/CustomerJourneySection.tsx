@@ -2,6 +2,7 @@ import { Download, ShoppingCart, QrCode, Coins } from "lucide-react";
 import { useState } from "react";
 import qrScannerMockup from "@/assets/qr-scanner-mockup.jpg";
 import heroPhoneMockup from "@/assets/hero-phone-mockup.jpg";
+import appInstalledMockup from "@/assets/app-installed-mockup.png";
 
 const CustomerJourneySection = () => {
   const [activeStep, setActiveStep] = useState(0);
@@ -11,7 +12,7 @@ const CustomerJourneySection = () => {
       icon: Download,
       title: "Baixa o app da sua marca",
       description: "Cliente encontra seu app personalizado na App Store ou Google Play e faz o download.",
-      image: heroPhoneMockup,
+      image: appInstalledMockup,
       color: "from-fidelify-dark to-fidelify-primary"
     },
     {
