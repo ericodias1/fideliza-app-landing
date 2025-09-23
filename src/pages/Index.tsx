@@ -1,13 +1,41 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+import HeroSection from "@/components/HeroSection";
+import ProblemsSection from "@/components/ProblemsSection";
+import SolutionsSection from "@/components/SolutionsSection";
+import HowItWorksSection from "@/components/HowItWorksSection";
+import CustomerJourneySection from "@/components/CustomerJourneySection";
+import SocialProofSection from "@/components/SocialProofSection";
+import FinalCTASection from "@/components/FinalCTASection";
+import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 
 const Index = () => {
+  useScrollAnimation();
+
   return (
-    <div className="flex min-h-screen items-center justify-center bg-background">
-      <div className="text-center">
-        <h1 className="mb-4 text-4xl font-bold">Welcome to Your Blank App</h1>
-        <p className="text-xl text-muted-foreground">Start building your amazing project here!</p>
-      </div>
-    </div>
+    <main className="font-inter">
+      {/* Structured Data for SEO */}
+      <script type="application/ld+json">
+        {JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "SoftwareApplication",
+          "name": "App de Fidelidade White-Label",
+          "description": "Aplicativo de fidelidade personalizado para supermercados, farmácias e lojas",
+          "applicationCategory": "BusinessApplication",
+          "operatingSystem": "iOS, Android",
+          "offers": {
+            "@type": "Offer",
+            "description": "Solução completa de fidelização de clientes"
+          }
+        })}
+      </script>
+
+      <HeroSection />
+      <ProblemsSection />
+      <SolutionsSection />
+      <HowItWorksSection />
+      <CustomerJourneySection />
+      <SocialProofSection />
+      <FinalCTASection />
+    </main>
   );
 };
 
