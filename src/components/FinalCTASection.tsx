@@ -17,9 +17,9 @@ const FinalCTASection = () => {
   return (
     <section className="py-20 bg-gradient-hero relative overflow-hidden">
       {/* Background decorative elements */}
-      <div className="absolute inset-0 bg-gradient-to-br from-fidelify-dark/20 to-fidelify-primary/20"></div>
-      <div className="absolute top-10 right-10 w-80 h-80 bg-fidelify-primary/10 rounded-full blur-3xl"></div>
-      <div className="absolute bottom-10 left-10 w-60 h-60 bg-fidelify-light/10 rounded-full blur-2xl"></div>
+      <div className="absolute inset-0 bg-gradient-to-br from-fidelify-primary/10 to-fidelify-light/5"></div>
+      <div className="absolute top-10 right-10 w-80 h-80 bg-fidelify-primary/5 rounded-full blur-3xl"></div>
+      <div className="absolute bottom-10 left-10 w-60 h-60 bg-fidelify-light/5 rounded-full blur-2xl"></div>
 
       <div className="relative z-10 container mx-auto px-6">
         <div className="max-w-4xl mx-auto text-center">
