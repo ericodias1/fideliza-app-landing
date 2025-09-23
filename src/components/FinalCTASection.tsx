@@ -52,10 +52,10 @@ const FinalCTASection = () => {
           <div className="fade-in-up">
             <button 
               onClick={handleWhatsAppClick}
-              className="btn-hero group text-xl px-12 py-6 mb-8"
+              className="btn-hero group text-xl px-12 py-6 mb-8 flex items-center justify-center"
             >
               Fale conosco no WhatsApp
-              <ArrowRight className="w-7 h-7 group-hover:translate-x-1 transition-transform" />
+              <ArrowRight className="w-7 h-7 ml-3 group-hover:translate-x-1 transition-transform" />
             </button>
             
             <p className="text-white/70 text-lg">

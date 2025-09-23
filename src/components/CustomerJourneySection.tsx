@@ -58,8 +58,8 @@ const CustomerJourneySection = () => {
                 key={index}
                 className={`p-6 rounded-2xl cursor-pointer transition-all duration-300 fade-in-up ${
                   activeStep === index 
-                    ? 'bg-gradient-to-r ' + step.color + ' text-white shadow-large' 
-                    : 'bg-light-gray hover:bg-gradient-to-r hover:' + step.color + ' hover:text-white'
+                    ? 'bg-gradient-to-r from-fidelify-dark to-fidelify-primary text-white shadow-large' 
+                    : 'bg-light-gray hover:bg-gradient-to-r hover:from-fidelify-light hover:to-fidelify-primary hover:text-white'
                 }`}
                 onClick={() => setActiveStep(index)}
                 style={{ animationDelay: `${index * 0.1}s` }}
