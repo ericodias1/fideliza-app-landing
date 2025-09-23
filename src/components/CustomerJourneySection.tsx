@@ -56,19 +56,19 @@ const CustomerJourneySection = () => {
             {steps.map((step, index) => (
               <div 
                 key={index}
-                className="p-6 rounded-2xl cursor-pointer transition-all duration-300 fade-in-up bg-light-gray hover-scale"
+                className="p-6 rounded-2xl cursor-pointer transition-all duration-300 fade-in-up bg-light-gray hover:bg-fidelify-pale hover:shadow-medium hover:scale-105 hover:border hover:border-fidelify-primary/20 group"
                 onClick={() => setActiveStep(index)}
                 style={{ animationDelay: `${index * 0.1}s` }}
               >
                 <div className="flex items-start gap-4">
-                    <div className="flex-shrink-0 w-12 h-12 rounded-xl flex items-center justify-center bg-fidelify-dark/10">
-                      <step.icon className="w-6 h-6 text-fidelify-dark" />
+                    <div className="flex-shrink-0 w-12 h-12 rounded-xl flex items-center justify-center bg-fidelify-dark/10 group-hover:bg-fidelify-primary/15 transition-all duration-300">
+                      <step.icon className="w-6 h-6 text-fidelify-dark group-hover:text-fidelify-primary transition-all duration-300" />
                   </div>
                   <div>
-                    <h3 className="text-xl font-semibold mb-2 text-dark-gray">
+                    <h3 className="text-xl font-semibold mb-2 text-dark-gray group-hover:text-fidelify-dark transition-all duration-300">
                       {step.title}
                     </h3>
-                    <p className="leading-relaxed text-muted-foreground">
+                    <p className="leading-relaxed text-muted-foreground group-hover:text-fidelify-deep transition-all duration-300">
                       {step.description}
                     </p>
                   </div>
