@@ -1,8 +1,29 @@
 import { Bell, Target, Gift, PieChart } from "lucide-react";
+import { useState, useEffect } from "react";
 import notificationMockup from "@/assets/notification-mockup.png";
 import dashboardPreview from "@/assets/dashboard-preview.jpg";
 
 const SolutionsSection = () => {
+  const [currentImageIndex, setCurrentImageIndex] = useState(0);
+  
+  const images = [
+    {
+      src: notificationMockup,
+      alt: "Notificação push de promoção Coca Cola no app de fidelidade"
+    },
+    {
+      src: dashboardPreview,
+      alt: "Ofertas exclusivas no aplicativo de fidelidade"
+    }
+  ];
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentImageIndex((prev) => (prev + 1) % images.length);
+    }, 4000); // Change image every 4 seconds
+
+    return () => clearInterval(interval);
+  }, [images.length]);
   const solutions = [
     {
       icon: Bell,
@@ -71,23 +92,39 @@ const SolutionsSection = () => {
             ))}
           </div>
 
-          {/* Visual mockups */}
-          <div className="space-y-8 fade-in-up">
-            <div className="relative">
-              <img 
-                src={notificationMockup}
-                alt="Notificação push de promoção Coca Cola no app de fidelidade"
-                className="rounded-2xl shadow-large w-full"
-              />
+          {/* Visual mockups - Auto-changing slider */}
+          <div className="fade-in-up">
+            <div className="relative overflow-hidden rounded-2xl shadow-large">
+              <div 
+                className="flex transition-transform duration-700 ease-in-out"
+                style={{ transform: `translateX(-${currentImageIndex * 100}%)` }}
+              >
+                {images.map((image, index) => (
+                  <img 
+                    key={index}
+                    src={image.src}
+                    alt={image.alt}
+                    className="w-full flex-shrink-0 object-cover"
+                  />
+                ))}
+              </div>
               <div className="absolute -top-4 -right-4 w-24 h-24 bg-fidelify-primary/20 rounded-full blur-xl"></div>
-            </div>
-            <div className="relative">
-              <img 
-                src={dashboardPreview}
-                alt="Dashboard com relatórios"
-                className="rounded-2xl shadow-large w-full"
-              />
               <div className="absolute -bottom-4 -left-4 w-32 h-32 bg-fidelify-light/20 rounded-full blur-xl"></div>
+              
+              {/* Slider indicators */}
+              <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 flex space-x-2">
+                {images.map((_, index) => (
+                  <button
+                    key={index}
+                    onClick={() => setCurrentImageIndex(index)}
+                    className={`w-2 h-2 rounded-full transition-all duration-300 ${
+                      currentImageIndex === index 
+                        ? 'bg-fidelify-primary' 
+                        : 'bg-white/50 hover:bg-white/70'
+                    }`}
+                  />
+                ))}
+              </div>
             </div>
           </div>
         </div>
