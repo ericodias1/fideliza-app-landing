@@ -148,7 +148,7 @@ All colors MUST be HSL.
   }
 
   .phone-screen-hero {
-    @apply bg-white rounded-[2.5rem] overflow-hidden aspect-[9/19];
+    @apply w-full h-auto rounded-[2.5rem] overflow-hidden;
   }
 
   /* Gradient Text */
