@@ -94,9 +94,9 @@ const SolutionsSection = () => {
 
           {/* Visual mockups - Auto-changing slider */}
           <div className="fade-in-up">
-            <div className="relative overflow-hidden rounded-2xl shadow-large">
+            <div className="relative overflow-hidden rounded-2xl shadow-large h-96">
               <div 
-                className="flex transition-transform duration-700 ease-in-out"
+                className="flex transition-transform duration-700 ease-in-out h-full"
                 style={{ transform: `translateX(-${currentImageIndex * 100}%)` }}
               >
                 {images.map((image, index) => (
@@ -104,7 +104,7 @@ const SolutionsSection = () => {
                     key={index}
                     src={image.src}
                     alt={image.alt}
-                    className="w-full flex-shrink-0 object-cover"
+                    className="w-full h-full flex-shrink-0 object-contain bg-white"
                   />
                 ))}
               </div>
