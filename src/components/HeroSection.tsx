@@ -23,8 +23,8 @@ const HeroSection = () => {
             </h1>
             
             <p className="text-xl lg:text-2xl text-white/90 leading-relaxed max-w-2xl">
-              Supermercados, farmácias e lojas podem criar seu próprio aplicativo 
-              white-label para engajar clientes, enviar promoções e aumentar vendas.
+              Supermercados, farmácias e lojas podem criar aplicativo 
+              próprio da sua empresa para engajar clientes, enviar promoções e aumentar vendas.
             </p>
             
             <div className="pt-6">

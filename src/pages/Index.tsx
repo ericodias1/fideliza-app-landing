@@ -19,7 +19,7 @@ const Index = () => {
         {JSON.stringify({
           "@context": "https://schema.org",
           "@type": "SoftwareApplication",
-          "name": "Fidelify - App de Fidelidade White-Label",
+          "name": "Fidelify - App de Fidelidade Próprio da Sua Empresa",
           "description": "Fidelify: Aplicativo de fidelidade personalizado para supermercados, farmácias e lojas",
           "applicationCategory": "BusinessApplication",
           "operatingSystem": "iOS, Android",
