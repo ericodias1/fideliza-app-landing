@@ -3,7 +3,7 @@ import heroPhoneMockup from "@/assets/hero-phone-mockup.jpg";
 
 const HeroSection = () => {
   const handleWhatsAppClick = () => {
-    window.open("https://wa.me/5511999999999?text=Olá,%20gostaria%20de%20saber%20mais%20sobre%20o%20Fidelify", "_blank");
+    window.open("http://wa.me/5553984418878?text=Olá,%20gostaria%20de%20saber%20mais%20sobre%20o%20Fidelify", "_blank");
   };
 
   return (

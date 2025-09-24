@@ -11,7 +11,7 @@ const FinalCTASection = () => {
   ];
 
   const handleWhatsAppClick = () => {
-    window.open("https://wa.me/5511999999999?text=Olá,%20gostaria%20de%20saber%20mais%20sobre%20o%20Fidelify%20e%20agendar%20uma%20demonstração", "_blank");
+    window.open("http://wa.me/5553984418878?text=Olá,%20gostaria%20de%20saber%20mais%20sobre%20o%20Fidelify%20e%20agendar%20uma%20demonstração", "_blank");
   };
 
   return (
