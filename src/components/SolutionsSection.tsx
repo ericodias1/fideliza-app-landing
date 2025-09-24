@@ -1,26 +1,18 @@
 import { Bell, Target, Gift, PieChart } from "lucide-react";
 import { useState, useEffect } from "react";
-import { BackgroundRemovalProcessor } from "./BackgroundRemovalProcessor";
 import notificationMockup from "@/assets/notification-mockup.png";
 import dashboardPreview from "@/assets/dashboard-preview.jpg";
 
 const SolutionsSection = () => {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
-  const [processedImages, setProcessedImages] = useState<{
-    notification: string | null;
-    dashboard: string | null;
-  }>({
-    notification: null,
-    dashboard: null
-  });
   
   const images = [
     {
-      src: processedImages.notification || notificationMockup,
+      src: notificationMockup,
       alt: "Notificação push de promoção Coca Cola no app de fidelidade"
     },
     {
-      src: processedImages.dashboard || dashboardPreview,
+      src: dashboardPreview,
       alt: "Ofertas exclusivas no aplicativo de fidelidade"
     }
   ];
@@ -61,7 +53,6 @@ const SolutionsSection = () => {
 
   return (
     <section className="py-20 bg-white">
-      <BackgroundRemovalProcessor onImagesProcessed={setProcessedImages} />
       <div className="container mx-auto px-6">
         <div className="text-center mb-16 fade-in-up">
           <h2 className="text-4xl lg:text-5xl font-bold text-dark-gray mb-6">
