@@ -131,11 +131,11 @@ All colors MUST be HSL.
   }
 
   .phone-frame {
-    @apply relative w-full;
+    @apply relative bg-dark-gray rounded-[3rem] p-3 shadow-large;
   }
 
   .phone-screen {
-    @apply w-full h-auto rounded-lg overflow-hidden;
+    @apply bg-white rounded-[2.5rem] overflow-hidden aspect-[9/19];
   }
 
   /* Hero Section Phone with Border */
